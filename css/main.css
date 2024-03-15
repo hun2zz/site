@@ -13,6 +13,8 @@ header {
   top: 0;
   /* 포지션을 사용시 가로길이 100%가 깨지므로 100%다시 설정. */
   width: 100%;
+  /* 가운데 정렬에 포지션을 사용했기 때문에 zindex부여. */
+  z-index: 9999;
 }
 
 header .inner-header {
@@ -86,4 +88,54 @@ header .inner-header .tnb li:last-child i {
 header .inner-header .gnb-mobile {
   /* 모바일버전에 있는 햄버거 아이콘 숨김. */
   display: none;
+}
+/* 여기까지 헤더 끝. */
+/* 화면 전체인 섹션 메인 */
+section.main {
+  background: url("../img/vis_4.jpg") no-repeat center/cover fixed;
+  height: 100vh;
+  /* 밑에 메인 타이틀에서 포지션 앱솔을 줬기 때문에 메인을 기준으로 가운데 정렬 시켜야 하므로 포지션 부여. */
+  position: relative;
+}
+section.main .main-title {
+  /* background: red; */
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px 10px #123;
+}
+section.main .main-title h2 {
+  font-size: 55px;
+}
+section.main .main-title p {
+  font-size: 25px;
+  margin: 20px 0;
+}
+section.main .main-title .view {
+  font-size: 15px;
+  letter-spacing: 2px;
+  position: relative;
+  display: block;
+  width: 180px;
+  margin: 0 auto;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  padding: 8px 0;
+  /* 가상 박스 넘치는 걸 숨길 수 있음. */
+  overflow: hidden;
+}
+/* 가상의 회색 박스임. */
+section.main .main-title .view::after {
+  /* 커튼역할이라고 생각하면 됨. */
+  content: "";
+  width: 0;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.4);
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* 트랜지션을 걸 땐 부모에 걸어야하므로 여기에 검. */
+  transition: 0.3s;
+}
+section.main .main-title .view:hover::after {
+  width: 100%;
 }
