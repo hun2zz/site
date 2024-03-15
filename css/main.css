@@ -139,3 +139,92 @@ section.main .main-title .view::after {
 section.main .main-title .view:hover::after {
   width: 100%;
 }
+/* 메인 끝 */
+/* section > div.title 공통 style */
+section .title {
+  text-align: center;
+}
+
+section .title h2 {
+  font-size: 45px;
+  color: #111;
+  margin-bottom: 5px;
+}
+section .title p {
+  font-size: 18px;
+  color: #555;
+}
+
+section .sub-container {
+  width: 74%;
+  margin: 0 auto;
+  /* background: tomato; */
+}
+/* 공통 스타일인 가운데 정렬 끝. */
+
+/* section.about style */
+section.about {
+  margin: 80px 0;
+}
+section.about ul.sub-container {
+  /* background: orange; */
+  margin-top: 30px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 30px;
+}
+section.about ul.sub-container li {
+  float: left;
+  width: 33.3333%;
+  /* 가운데만 2줄이라 길기 때문에 높이를 고정으로 해놓음. */
+  height: 510px;
+}
+/* a에 마우스르 ㄹ올리면 이미지 박스안에 이미지를 확대하기. */
+section.about ul.sub-container li a:hover .img-box img {
+  transform: scale(1.2);
+}
+/* 액자에 사진 100퍼로 만들기 */
+section.about ul.sub-container li .img-box img {
+  /* opacity: 0.3; */
+  width: 100%;
+  /* 이미지 확대가 0.6초가 걸리게함 . hover가 없는 쪽에 효과를 줘야함. */
+  transition: 0.6s;
+}
+section.about ul.sub-container li .img-box {
+  /* 위에 hover부분에 확대했을 때 액자를 벗어난 부분을 숨기라고 입력. */
+  /* border: 3px solid yellow; */
+  overflow: hidden;
+}
+/* 텍스트 칸 패딩 넣기 */
+section.about ul.sub-container li .text {
+  padding: 25px;
+}
+
+section.about ul.sub-container li .text h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+section.about ul.sub-container li .text p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+section.about ul.sub-container li .text .more {
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+  padding-left: 40px;
+}
+
+section.about ul.sub-container li .text .more::before {
+  /* 도형안에 글씨 넣기 */
+  content: "→";
+  display: block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  background: #ff8342;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: -7px;
+}
