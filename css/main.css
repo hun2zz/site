@@ -3,11 +3,87 @@
 /* header file */
 
 header {
-  background: aqua;
+  /* 헤더 전체 영역 */
+  background: rgba(0, 0, 0, 0.2);
+  height: 100px;
+  /* 헤더안에 글씨들을 가운데 정렬해주기 위해 100px로 고정후 높이는 100으로 바꿈. */
+  line-height: 100px;
+  /* 헤더 고정시키고 탑에 고정. */
+  position: fixed;
+  top: 0;
+  /* 포지션을 사용시 가로길이 100%가 깨지므로 100%다시 설정. */
+  width: 100%;
 }
 
 header .inner-header {
-  border: 3px solid tomato;
+  /* 헤더 안에 헤더 반응형 사이트에서 편한 헤더임. */
   width: 84%;
   margin: 0 auto;
+}
+/*  */
+header .inner-header .logo {
+  /* 헤더 로고 액자 */
+  float: left;
+  width: 200px;
+}
+header .inner-header .logo img {
+  /* 액자 안의 사진이다. 100%는 액자의 크기에 딱 맞게 하는 것.*/
+  width: 100%;
+}
+/*  */
+header .inner-header .gnb {
+  /* 가운데 헤더 */
+  float: left;
+  margin-left: 80px;
+}
+header .inner-header .gnb li {
+  /* 가운데 헤더 안의 영역들을 개별로 잡은거나 마찬가지. 수직배치이므로 수평배치로 바꾼다. */
+  float: left;
+  margin-right: 80px;
+}
+header .inner-header .gnb li a {
+  /* background: red; */
+  display: block;
+  color: #fff;
+  font-size: 16px;
+}
+header .inner-header .gnb li a:hover {
+  color: #ff8342;
+}
+/*  */
+
+header .inner-header .tnb {
+  /* 오른쪽 헤더 */
+  float: right;
+  color: #fff;
+}
+
+header .inner-header .tnb li {
+  /* 오른쪽 헤더들 수직배치를 수평으로 바꾸고 오른쪽에 25px정도 띄움 */
+  float: left;
+  margin-right: 25px;
+  font-size: 16px;
+}
+
+header .inner-header .tnb li:first-child i,
+header .inner-header .tnb li:nth-child(2) i {
+  margin-right: 8px;
+  font-size: 14px;
+}
+header .inner-header .tnb li:last-child a {
+  border: 1px solid #fff;
+  padding: 5px 15px;
+  border-radius: 30px;
+}
+header .inner-header .tnb li:last-child a:hover {
+  background: #fff;
+  color: #ff8342;
+}
+header .inner-header .tnb li:last-child i {
+  margin-left: 5px;
+}
+
+header .inner-header .gnb-mobile {
+  /* 모바일버전에 있는 햄버거 아이콘 숨김. */
+  display: none;
 }
