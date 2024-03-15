@@ -228,3 +228,297 @@ section.about ul.sub-container li .text .more::before {
   left: 0;
   top: -7px;
 }
+/* 1번째 섹션 끝 */
+
+section.innovation {
+  height: 700px;
+}
+
+div.sub-container.img-box {
+  /* border: 1px solid #000; */
+  background: url(../img/product_1.jpg);
+  height: 500px;
+  margin: 40px auto;
+  position: relative;
+}
+div.sub-container .inner {
+  width: 80%;
+  /* border: 1px solid #000; */
+  position: absolute;
+  bottom: -10%;
+  background: #fff;
+  left: 10%;
+  height: 200px;
+}
+/* 박스1 */
+div.sub-container .inner .en {
+  /* border: 1px solid #000; */
+  padding: 20px;
+  text-indent: 10px;
+  font-size: 1.2em;
+}
+div.sub-container .inner .bottom {
+  background: rgb(29, 29, 51);
+  height: 142px;
+  color: white;
+  position: relative;
+}
+div.sub-container .inner .bottom p {
+  color: white;
+  text-indent: 15px;
+  /* border: 1px solid white; */
+  float: left;
+  height: 100%;
+  width: 62%;
+  display: block;
+  text-align: justify;
+  margin: 60px;
+  margin-left: 80px;
+}
+div.sub-container .inner a {
+  /* border: 1px solid yellow; */
+  position: absolute;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  background: orange;
+  border-radius: 15px;
+  bottom: 39%;
+  right: 9%;
+}
+div.sub-container .inner a:hover {
+  background: rgb(184, 127, 22);
+}
+section.me {
+  background: url(../img/me.jpg) no-repeat center/cover;
+  width: 100%;
+  border: 1px solid #000;
+  height: 700px;
+  padding: 50px;
+  margin-bottom: 100px;
+}
+section.me ul.sub-container {
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  padding: 30px;
+}
+
+section.me ul.sub-container li h3 {
+  /* border: 1px solid #000; */
+  font-size: 1.2em;
+  padding: 15px;
+  position: relative;
+}
+
+section.me ul.sub-container li p:nth-child(2) {
+  /* border: 1px solid #000; */
+  font-size: 12px;
+  padding-left: 30px;
+  line-height: 15px;
+}
+section.me ul.sub-container li .more {
+  /* border: 1px solid #000; */
+  padding-left: 30px;
+  font-weight: bold;
+  margin-top: 15px;
+  display: block;
+}
+
+section.me ul.sub-container li .more .fa {
+  color: orange;
+}
+
+section.me ul.sub-container li h3 .fa {
+  position: absolute;
+  left: -40px;
+  color: orange;
+}
+
+section.me ul.sub-container li h3 span {
+  position: relative;
+}
+section.me ul.sub-container li h3 .far {
+  position: absolute;
+  left: -40px;
+  color: orange;
+}
+section.me ul.sub-container .in {
+  /* border: 1px solid #000; */
+  /* font-weight: bold; */
+  float: left;
+  display: block;
+  width: 100%;
+  line-height: 40px;
+  padding: 15px;
+  padding-left: 30px;
+  /* border: 1px solid #000; */
+  margin-bottom: 10px;
+}
+section.me ul.sub-container .in .clearfix em {
+  /* border: 1px solid blue; */
+  height: 33.333%;
+  float: left;
+  font-weight: bold;
+  position: relative;
+}
+section.me ul.sub-container .in .clearfix em::after {
+  width: 5px;
+  height: 5px;
+  background: orange;
+  content: "";
+  display: block;
+  position: absolute;
+  right: -40px;
+  top: 20px;
+  border-radius: 50%;
+}
+section.me ul.sub-container .in .clearfix p {
+  /* border: 1px solid black; */
+  height: 41.11px;
+  float: right;
+  display: block;
+  padding-top: 14px;
+  width: 90%;
+}
+
+section.me ul.sub-container {
+  padding: 0;
+}
+section.me ul.sub-container > li {
+  /* border: 1px solid #000; */
+  padding-left: 20px;
+  padding-top: 4px;
+  padding-bottom: 30px;
+}
+section.me ul.sub-container .zlzl {
+  border-bottom: 2px solid #bfb4b4;
+}
+
+/*  */
+
+section.sns .title {
+  margin-bottom: 80px;
+  /* border: 1px solid #000; */
+}
+/* 타이틀 부분 */
+section.sns .sub-container {
+  /* border: 1px solid #000; */
+}
+section.sns .sub-container li {
+  /* border: 1px solid #000; */
+  float: left;
+  width: 31.6666%;
+  height: 500px;
+}
+section.sns .sub-container .img-box img {
+  /* border: 1px solid yellow; */
+  /* height: 100%; */
+  width: 100%;
+}
+
+section.sns .sub-container .img-box {
+  height: 50%;
+  overflow: hidden;
+}
+section.sns .sub-container .n1 .img-box {
+  /* border: 10px solid purple; */
+  height: 50%;
+}
+section.sns .sub-container .n1 {
+  float: left;
+  margin-right: 2.5%;
+}
+
+section.sns .sub-container .n2 {
+  float: left;
+  margin-right: 2.5%;
+}
+
+section.sns .sub-container li a .bottom {
+  display: block;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+section.sns .sub-container li a .bottom > p:nth-child(1) {
+  /* border: 1px solid #000; */
+  color: orange;
+  padding: 10px;
+  padding-left: 20px;
+}
+section.sns .sub-container li a .bottom > p:nth-child(2) {
+  /* border: 1px solid yellow; */
+  padding: 10px;
+  padding-top: 3px;
+  font-size: 1.1em;
+  padding-left: 20px;
+}
+section.sns .sub-container li a .bottom > p:nth-child(3) {
+  /* border: 1px solid blue; */
+  color: gray;
+  padding-left: 20px;
+}
+section.sns .sub-container li a .bottom .time .far {
+  padding-right: 5px;
+}
+
+footer .inner {
+  /* border: 1px solid #000; */
+  float: left;
+  width: 100%;
+  height: 150px;
+  border-top: 1px solid black;
+}
+
+footer .inner .ft-logo {
+  float: left;
+  /* border: 1px solid #000; */
+  width: 25%;
+  height: 150px;
+  overflow: hidden;
+}
+footer .inner .address {
+  /* border: 1px solid #000; */
+  float: left;
+  width: 25%;
+  height: 150px;
+  padding-top: 75px;
+  font-size: 1em;
+  font-weight: 600;
+}
+footer .inner .address li.en {
+  font-size: 0.9em;
+  color: gray;
+}
+footer .inner .list {
+  float: left;
+  width: 50%;
+  /* border: 1px solid #000; */
+  height: 150px;
+}
+footer .inner .list li {
+  float: left;
+}
+footer .inner .list li {
+  float: left;
+  width: 20%;
+  line-height: 150px;
+  padding-left: 15px;
+}
+footer .inner .list .num {
+  font-weight: 600;
+}
+section.me #incruit-btn {
+  border: 1px solid #000;
+  padding: 5px 50px;
+  background: orange;
+  border-radius: 30px;
+  color: #fff;
+  position: absolute;
+  left: 45%;
+}
+section.me #incruit-btn:hover {
+  background: rgb(83, 59, 15);
+}
