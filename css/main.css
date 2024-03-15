@@ -1,1 +1,13 @@
 @import url("common.css");
+
+/* header file */
+
+header {
+  background: aqua;
+}
+
+header .inner-header {
+  border: 3px solid tomato;
+  width: 84%;
+  margin: 0 auto;
+}
